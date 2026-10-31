@@ -94,6 +94,8 @@ h1,h2,h3{font-weight:400; text-wrap:balance; margin:0; line-height:1.1}
 #confirmar .label, #confirmar .sec-head p, #confirmar .rsvp-note, #confirmar .rsvp-card p{color:var(--sage)}
 #confirmar .rsvp-card{background:var(--white); border-color:transparent}
 #confirmar .rsvp-card:hover{border-color:var(--sage); background:var(--white)}
+#confirmar .rsvp-options.single{grid-template-columns:minmax(0,1fr); max-width:440px; margin-inline:auto}
+.rsvp-options.single .rsvp-card{padding:36px 28px}
 #bom-saber{background:#ECEFE7; border-top-color:transparent}
 #bom-saber .label, #bom-saber .faq p{color:var(--sage)}
 #bom-saber .faq div{border-top-color:color-mix(in srgb, #526258 20%, #ECEFE7)}
@@ -333,25 +335,16 @@ footer small{font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; co
       <div class="sec-head">
         <span class="label">RSVP</span>
         <h2>Confirme sua presença</h2>
-        <p>Escolha o formulário de acordo com o seu convite. Leva menos de um minuto.</p>
+        <p>Leva menos de um minuto.</p>
         <div class="deadline"><span class="label">Responda até</span><span id="deadline">30.11.2026</span></div>
       </div>
-      <div>
-        <div class="rsvp-options">
-          <a class="rsvp-card" href="https://forms.gle/BXBLDaCJURWoEPgJ7" target="_blank" rel="noopener">
-            <span class="label">Cartório · 16h30</span>
-            <h3>Convidado do cartório</h3>
-            <p>Cartório do Mucuripe</p>
-            <span class="btn primary">Confirmar presença</span>
-          </a>
-          <a class="rsvp-card" href="https://forms.gle/yYBBBJLqwQtkLGG38" target="_blank" rel="noopener">
-            <span class="label">Recepção · 18h30</span>
-            <h3>Convidado da recepção</h3>
-            <p>Rancho do Poço · Parquelândia</p>
-            <span class="btn primary">Confirmar presença</span>
-          </a>
-        </div>
-        <p class="rsvp-note">Foi convidado para os dois momentos? Confirme nos dois formulários.</p>
+      <div class="rsvp-options single">
+        <a class="rsvp-card" href="https://forms.gle/yYBBBJLqwQtkLGG38" target="_blank" rel="noopener">
+          <span class="label">Sexta, 18 de dezembro · 18h30</span>
+          <h3>Rancho do Poço</h3>
+          <p>Cerimônia e festa · Parquelândia</p>
+          <span class="btn primary">Confirmar presença</span>
+        </a>
       </div>
     </div>
   </section>
