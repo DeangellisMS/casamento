@@ -218,7 +218,9 @@ footer small{font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; co
 .timeline .event::before{content:""; position:absolute; top:-8px; left:50%; width:15px; height:15px; margin-left:-7.5px; border-radius:50%; background:var(--sage); box-shadow:0 0 0 6px var(--mint)}
 .timeline .event:not(:last-child)::after{content:""; position:absolute; left:50%; bottom:-65px; width:1px; height:57px; background:color-mix(in srgb, var(--caramel) 60%, #FFFFFF)}
 .timeline .event .time{font-size:2.2rem; line-height:1.1; margin-bottom:4px}
-.timeline .event .place{margin-bottom:16px}
+.timeline .event .place{margin-bottom:0}
+.timeline .event .desc{margin:4px 0 16px; color:var(--muted)}
+.timeline .event:first-child .desc{margin-bottom:0}
 
 /* Celular */
 @media (max-width:860px){
@@ -280,7 +282,7 @@ footer small{font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; co
         <div><b id="cd-m">00</b><span>minutos</span></div>
         <div><b id="cd-s">00</b><span>segundos</span></div>
       </div>
-      <span class="label" id="cd-foot">para 18 de dezembro, 16h30</span>
+      <span class="label" id="cd-foot">para 18 de dezembro, 16h30 · casamento civil</span>
     </div>
   </section>
 
@@ -310,9 +312,7 @@ footer small{font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; co
           <div>
             <h3>Cerimônia civil</h3>
             <p class="place">Cartório do Mucuripe</p>
-            <div class="links">
-              <a class="btn small" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Cart%C3%B3rio%20do%20Mucuripe%20Fortaleza">Como chegar</a>
-            </div>
+            <p class="desc">Apenas família e alguns amigos.</p>
           </div>
         </li>
         <li class="event">
@@ -320,9 +320,11 @@ footer small{font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; co
           <div>
             <h3>Cerimônia simbólica e recepção</h3>
             <p class="place">Rancho do Poço · Parquelândia</p>
+            <p class="desc">Todos os convidados.</p>
             <div class="links">
               <a class="btn small" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Rancho%20do%20Po%C3%A7o%20Parquel%C3%A2ndia%20Fortaleza">Como chegar</a>
               <a class="btn small" target="_blank" rel="noopener" id="cal-link" href="#">Salvar na agenda</a>
+              <a class="btn small primary" href="#confirmar">Confirmar presença</a>
             </div>
           </div>
         </li>
@@ -342,7 +344,7 @@ footer small{font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; co
         <a class="rsvp-card" href="https://forms.gle/yYBBBJLqwQtkLGG38" target="_blank" rel="noopener">
           <span class="label">Sexta, 18 de dezembro · 18h30</span>
           <h3>Rancho do Poço</h3>
-          <p>Cerimônia e festa · Parquelândia</p>
+          <p>Cerimônia e jantar · Parquelândia</p>
           <span class="btn primary">Confirmar presença</span>
         </a>
       </div>
